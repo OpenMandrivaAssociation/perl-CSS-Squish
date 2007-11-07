@@ -1,7 +1,7 @@
 %define realname   CSS-Squish
 
 Name:		perl-%{realname}
-Version:    0.05
+Version:    0.06
 Release:    %mkrel 1
 License:	Artistic or GPL
 Group:		Development/Perl
