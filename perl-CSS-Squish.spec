@@ -6,13 +6,13 @@ Release:    %mkrel 1
 License:	Artistic or GPL
 Group:		Development/Perl
 Summary:    Compact many CSS files into one big file 
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/CSS/CSS-Squish-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
-BuildRequires: perl(File::Spec)
-BuildRequires: perl(Test::LongString)
-BuildArch: noarch
+Source:         http://www.cpan.org/modules/by-module/CSS/%{module}-%{version}.tar.gz
+BuildRequires:  perl(File::Spec)
+BuildRequires:  perl(Test::LongString)
+BuildRequires:  perl(URI)
+BuildArch:      noarch
+BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 This module takes a list of CSS files and concatenates them, making sure to 
@@ -39,11 +39,11 @@ is not supported at the current time.
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
