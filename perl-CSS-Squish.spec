@@ -1,12 +1,12 @@
-%define realname   CSS-Squish
+%define module   CSS-Squish
 
-Name:		perl-%{realname}
+Name:		perl-%{module}
 Version:    0.06
 Release:    %mkrel 1
 License:	Artistic or GPL
 Group:		Development/Perl
 Summary:    Compact many CSS files into one big file 
-Url:		http://search.cpan.org/dist/%{realname}
+Url:		http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/CSS/%{module}-%{version}.tar.gz
 BuildRequires:  perl(File::Spec)
 BuildRequires:  perl(Test::LongString)
