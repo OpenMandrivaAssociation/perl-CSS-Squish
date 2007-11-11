@@ -1,7 +1,7 @@
 %define module   CSS-Squish
 
 Name:		perl-%{module}
-Version:    0.06
+Version:    0.07
 Release:    %mkrel 1
 License:	Artistic or GPL
 Group:		Development/Perl
