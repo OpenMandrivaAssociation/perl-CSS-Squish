@@ -12,6 +12,7 @@ BuildRequires:  perl(File::Spec)
 BuildRequires:  perl(Test::LongString)
 BuildRequires:  perl(URI)
 BuildArch:      noarch
+BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 This module takes a list of CSS files and concatenates them, making sure to 
