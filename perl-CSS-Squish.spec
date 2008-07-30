@@ -2,7 +2,7 @@
 
 Name:		perl-%{module}
 Version:    0.07
-Release:    %mkrel 1
+Release:    %mkrel 3
 License:	Artistic or GPL
 Group:		Development/Perl
 Summary:    Compact many CSS files into one big file 
