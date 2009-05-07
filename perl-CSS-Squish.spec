@@ -1,8 +1,8 @@
 %define module   CSS-Squish
 
 Name:		perl-%{module}
-Version:    0.07
-Release:    %mkrel 3
+Version:    0.08
+Release:    %mkrel 1
 License:	Artistic or GPL
 Group:		Development/Perl
 Summary:    Compact many CSS files into one big file 
