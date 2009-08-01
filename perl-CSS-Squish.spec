@@ -1,18 +1,21 @@
-%define module   CSS-Squish
+%define upstream_name    CSS-Squish
+%define upstream_version 0.08
 
-Name:		perl-%{module}
-Version:    0.08
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
-License:	Artistic or GPL
-Group:		Development/Perl
+
 Summary:    Compact many CSS files into one big file 
-Url:		http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/CSS/%{module}-%{version}.tar.gz
+License:	Artistic or GPL+
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/CSS/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:  perl(File::Spec)
 BuildRequires:  perl(Test::LongString)
 BuildRequires:  perl(URI)
 BuildArch:      noarch
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
+BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module takes a list of CSS files and concatenates them, making sure to 
@@ -29,7 +32,7 @@ whitespace and other parts of the CSS itself, but this functionality
 is not supported at the current time.
 
 %prep
-%setup -q -n CSS-Squish-%{version} 
+%setup -q -n CSS-Squish-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -50,5 +53,3 @@ rm -rf %{buildroot}
 %doc CHANGES README
 %{perl_vendorlib}/CSS/
 %{_mandir}/man3/*
-
-
