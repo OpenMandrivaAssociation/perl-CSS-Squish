@@ -8,7 +8,7 @@ Release:	5
 Summary:	Compact many CSS files into one big file 
 License:	Artistic or GPL+
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/CSS/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
