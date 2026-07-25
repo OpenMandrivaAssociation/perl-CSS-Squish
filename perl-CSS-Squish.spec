@@ -2,14 +2,14 @@
 %define upstream_version 0.10
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Compact many CSS files into one big file 
 License:	Artistic or GPL+
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CSS/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/CSS-Squish
+Source0:	https://cpan.metacpan.org/authors/id/T/TS/TSIBLEY/CSS-Squish-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
