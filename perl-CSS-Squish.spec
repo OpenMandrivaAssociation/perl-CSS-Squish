@@ -1,15 +1,13 @@
 %define upstream_name    CSS-Squish
-%define upstream_version 0.10
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.10
+Release:	7
 
 Summary:	Compact many CSS files into one big file 
 License:	Artistic or GPL+
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/CSS-Squish
-Source0:	https://cpan.metacpan.org/authors/id/T/TS/TSIBLEY/CSS-Squish-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/T/TS/TSIBLEY/CSS-Squish-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -33,7 +31,7 @@ whitespace and other parts of the CSS itself, but this functionality
 is not supported at the current time.
 
 %prep
-%setup -q -n CSS-Squish-%{upstream_version}
+%setup -q -n CSS-Squish-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -66,9 +64,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.80.0-1mdv2010.0
 + Revision: 405958
-- rebuild using %%perl_convert_version
-
-* Thu May 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
+- rebuild using %0.10 Thu May 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
 + Revision: 373003
 - new version
 
