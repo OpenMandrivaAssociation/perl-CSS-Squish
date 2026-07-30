@@ -2,7 +2,7 @@
 %define upstream_version 0.10
 Name:		perl-%{upstream_name}
 Version:	0.10
-Release:	2
+Release:	3
 
 Summary:	Compact many CSS files into one big file 
 License:	Artistic or GPL+
